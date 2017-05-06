@@ -52,3 +52,41 @@
   font-size: 1.25em;
   margin: 0;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url('./fondo.png');
+  height: 100vh;
+  background-size: cover;
+  background-position-y: 90%;
+  position: relative;
+}
+
+header .header_content{
+  position: absolute;
+
+}
+
+header h1 {
+  color: white;
+  font-family: 'San Francisco';
+  font-weight: 600;
+  letter-spacing: 40px;
+  font-size: 10em;
+}
+
+.gradient {
+  background-image: linear-gradient(to right bottom,rgba(48, 183, 255, 1) 0%,
+                                                rgba(146, 64, 255, 1) 50%, rgba(253, 94, 141, 1) 100%),
+                    linear-gradient(to right bottom, rgba(255,255,255,0.80) 0%,
+                                                rgba(0,0,0,0.50) 100%),
+                    linear-gradient(to left top, #61ACD5 0%, #3274AA 100%);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  opacity: 0.7;
+}

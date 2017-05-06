@@ -19,6 +19,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <div className={s.gradient}></div>
         <div className={s.container}>
           <Navigation />
           <Link className={s.brand} to="/">
