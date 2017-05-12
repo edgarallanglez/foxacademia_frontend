@@ -8,6 +8,9 @@
  */
 
 import React from 'react';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+import FontAwesome from 'react-fontawesome';
 import PropTypes from 'prop-types';
 import history from '../../history';
 
@@ -19,11 +22,16 @@ function isModifiedEvent(event) {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }
 
+const style = {
+  marginRight: 15,
+};
+
 class Link extends React.Component {
   static propTypes = {
     to: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     onClick: PropTypes.func,
+    icon: PropTypes.node
   };
 
   static defaultProps = {
@@ -47,9 +55,19 @@ class Link extends React.Component {
     history.push(this.props.to);
   };
 
+
   render() {
-    const { to, children, ...props } = this.props;
-    return <a href={to} {...props} onClick={this.handleClick}>{children}</a>;
+    const { to, children, icon, ...props } = this.props;
+    return (
+      <div>
+        <FloatingActionButton backgroundColor="white" mini={true} style={style} href={to} target="_blank">
+          <FontAwesome
+            name={icon}
+            style={{ color: '#1D3567' }}
+          />
+        </FloatingActionButton>
+      </div>
+    );
   }
 }
 
