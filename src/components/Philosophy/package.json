@@ -1,0 +1,6 @@
+{
+  "name": "Philosophy",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Philosophy.js"
+}
