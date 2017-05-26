@@ -9,16 +9,41 @@
 
 @import '../../components/variables.css';
 
+@font-face {
+  font-family: 'WildYouth';
+  src: local(WildYouth Regular), url('../../../public/WildYouth-Regular.otf');
+  font-weight: 400;
+}
+
 .root {
   padding-left: 20px;
   padding-right: 20px;
   background: white;
 }
 
+.wild {
+  font-family: 'WildYouth';
+}
+
 .container {
   margin: 0 auto;
   padding: 0 0 40px;
   max-width: var(--max-content-width);
+}
+
+.philosophy {
+  width: 60%;
+  display: inline-block;
+}
+
+.assetContainer {
+  width: 40%;
+  position: relative;
+}
+
+.asset {
+  width: 70%;
+  display: inline-block;
 }
 
 .newsItem {
