@@ -9,32 +9,22 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Lectures.css';
+import s from './Lecture.css';
 
-class Lectures extends React.Component {
+class Lecture extends React.Component {
   render() {
     return (
-      <section className={s.root}>
-        <div className={s.container}>
-          <h1>Cursos</h1>
-          <div className={s.lectures_container}>
-            <div className={s.scroll}>
-              <div className={s.lecture}>
+       <div className={s.lecture}>
                 <h3>iOS</h3>
                 <figure>
                   <img />
                 </figure>
                 <a href="#" className={s.view_more}> VER MÁS </a>
                 <a href="#" className={s.enroll_button}> $$ / INSCRIBEME </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+              </div>     
+              
     );
   }
 }
 
-export default withStyles(s)(Lectures);
+export default withStyles(s)(Lecture);
