@@ -13,7 +13,9 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import s from './Layout.css';
 import Header from '../Header';
+import Philosophy from '../Philosophy';
 import Lectures from '../Lectures';
+import Team from '../Team';
 import Footer from '../Footer';
 
 class Layout extends React.Component {
@@ -26,8 +28,9 @@ class Layout extends React.Component {
       <MuiThemeProvider>
         <div>
           <Header />
-          {this.props.children}
+          <Philosophy />
           <Lectures />
+          <Team />
           <Footer />
         </div>
       </MuiThemeProvider>

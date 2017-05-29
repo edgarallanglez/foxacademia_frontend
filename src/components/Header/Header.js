@@ -10,17 +10,26 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
-import Link from '../Link';
 import Navigation from '../Navigation';
 import logoUrl from './logo-small.png';
 import logoUrl2x from './logo-small@2x.png';
 import backgroundPhoto from './fondo.jpg';
 
+const backgroundStyle = {
+  width: '100% !important',
+  height: '100vh',
+  zIndex: '-1',
+  position: 'absolute',
+  backgroundImage: `url(${backgroundPhoto})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+};
+
 class Header extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <img src={backgroundPhoto} className={s.bp} alt="background" />
+        <div style={backgroundStyle} alt="background" />
         <div className={s.gradient} />
         <div className={s.container}>
           <Navigation />

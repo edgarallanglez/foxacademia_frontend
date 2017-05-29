@@ -1,0 +1,88 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+@font-face {
+  font-family: 'WildYouth';
+  src: local(WildYouth Regular), url('../../../public/WildYouth-Regular.otf');
+  font-weight: 400;
+}
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+}
+
+.wild {
+  font-family: 'WildYouth';
+  font-weight: 100 !important;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: var(--max-content-width);
+}
+
+.philosophy {
+  width: 50%;
+  margin-top: 20px;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.assetContainer {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  height: 420px;
+}
+
+.asset {
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: inline-block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.assetItem {
+  background-size: cover;
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+}
+
+.newsDesc {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.125rem;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    font-size: 0.875rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
