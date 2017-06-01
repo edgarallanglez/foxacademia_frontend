@@ -10,20 +10,22 @@
 import React from 'react';
 import Slider from 'react-slick';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import FontAwesome from 'react-fontawesome';
 import s from './Become.css';
-import Student from '../Student';
-import asset1 from '../Mentor/mentor1.jpg';
-import asset2 from '../Mentor/mentor2.jpg';
+import Student from './Student';
+import asset1 from './Student/student1.jpg';
+import asset2 from '../Team/Mentor/mentor2.jpg';
 
 const backgroundItem1 = { backgroundImage: `url(${asset1})` };
 const backgroundItem2 = { backgroundImage: `url(${asset2})` };
 
 const mentor_one = {
-  name: 'Edgar Allan Glez',
-  pro_field: 'Full Stack Dev/UI/UX',
-  about: 'Apasionado por la tecnología desde siempre, me encanta el como se ve\
-          y como puede funcionar mejor un producto, 5 años desarrollando en\
-           diferentes plataformas tratando de estar siempre a la vanguardia.',
+  name: 'Jared Leyva Kun',
+  pro_field: 'OSU Gamer',
+  about: 'Me encantó FOX Academia, tiene a los mejores profesores y aprendo\
+          mucho de todas las tecnologías que tenía duda, ahora estoy seguro\
+           que quiero ser un gran desarollador cuando sea grande, y seré el\
+             mejor de toda la aldea, ¡de veras!',
   background: backgroundItem1,
 };
 
@@ -50,11 +52,8 @@ function NextArrow(props) {
 function PrevArrow(props) {
   const { className, style, onClick } = props
   return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
-      onClick={onClick}
-    ></div>
+    <div className={className} style={{ ...style }} onClick={onClick}>
+    </div>
   );
 }
 
@@ -73,7 +72,7 @@ class Become extends React.Component {
     return (
       <section className={s.root}>
         <div className={s.container}>
-          <h1>¿Por qué deberías ser un <br/> FOX Student?</h1>
+          <h1>¿Por qué deberías ser un <br />FOX Student?</h1>
           <div className={s.story_container}>
             <div className={s.story}>
               <h2>DESARROLLADOR</h2>

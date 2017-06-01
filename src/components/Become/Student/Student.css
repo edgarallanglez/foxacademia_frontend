@@ -7,7 +7,7 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@import '../variables.css';
+@import '../../variables.css';
 
 .root {
   padding-left: 20px;
@@ -41,11 +41,12 @@
   width: 70%;
   font-weight: 300;
   text-align: left;
+  margin: 0 15px;
 }
 
 .about h4 {
   font-weight: 100;
-  color: #444;
+  color: #333;
 }
 
 .about h6 {
@@ -55,5 +56,5 @@
 }
 
 .student_about {
-  font-size: 15px;
+  font-size: 16px;
 }

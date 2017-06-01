@@ -10,9 +10,9 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Team.css';
-import Mentor from '../Mentor';
-import asset1 from '../Mentor/mentor1.jpg';
-import asset2 from '../Mentor/mentor2.jpg';
+import Mentor from './Mentor';
+import asset1 from './Mentor/mentor1.jpg';
+import asset2 from './Mentor/mentor2.jpg';
 
 const backgroundItem1 = { backgroundImage: `url(${asset1})` };
 const backgroundItem2 = { backgroundImage: `url(${asset2})` };
