@@ -25,39 +25,19 @@
   font-size: 2em;
 }
 
+.info, .map{
+  display: inline-block;
+  vertical-align: middle;
+}
 
-.lecture{
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  border-radius: 10px;
-  background: white;
+.info{
+  background: red;
+
+  width: 30%;
+}
+.map{
   display: inline-block;
-  width: 300px;
-  overflow: hidden;
-  margin-right: 20px;
-}
-.lecture img{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: red;
-  margin-bottom: 60px;
-}
-.lecture .enroll_button{
-  background: red;
-  width: 100%;
-  padding: 10px 0;
-}
-.lecture a{
-  background: red;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-.lecture .view_more{
-  margin-bottom: 20px;
-  border-radius: 5px;
+  width: 70%;
 }
 .link,
 .link:active,

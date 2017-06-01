@@ -1,5 +1,5 @@
 {
-  "name": "Lectures",
+  "name": "Lecture",
   "version": "0.0.0",
   "private": true,
   "main": "./Lecture.js"

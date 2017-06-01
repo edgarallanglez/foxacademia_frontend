@@ -9,20 +9,27 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import PropTypes from 'prop-types';
 import s from './Lecture.css';
 
+
 class Lecture extends React.Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired
+  };
+
   render() {
+    const { title,...props } = this.props;
     return (
        <div className={s.lecture}>
-                <h3>iOS</h3>
+              <h3>{title}</h3>
                 <figure>
                   <img />
                 </figure>
                 <a href="#" className={s.view_more}> VER MÁS </a>
                 <a href="#" className={s.enroll_button}> $$ / INSCRIBEME </a>
-              </div>     
-              
+        </div> 
+
     );
   }
 }

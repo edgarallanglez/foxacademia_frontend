@@ -9,7 +9,16 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import Lecture from '../Lecture';
 import s from './Lectures.css';
+//import asset1 from '../Lecture/testbadge.png';
+
+
+//const lectureImage1 = { image: `url(${asset1})` };
+
+const lecture_one = {
+  title: 'iOS'
+};
 
 class Lectures extends React.Component {
   render() {
@@ -19,14 +28,7 @@ class Lectures extends React.Component {
           <h1>Cursos</h1>
           <div className={s.lectures_container}>
             <div className={s.scroll}>
-              <div className={s.lecture}>
-                <h3>iOS</h3>
-                <figure>
-                  <img />
-                </figure>
-                <a href="#" className={s.view_more}> VER MÁS </a>
-                <a href="#" className={s.enroll_button}> $$ / INSCRIBEME </a>
-              </div>
+              <Lecture title={lecture_one.title} />
             </div>
           </div>
         </div>

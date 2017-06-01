@@ -8,27 +8,32 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Philosophy.css';
 import asset1 from './mentor.jpg';
 import asset2 from './mentor2.jpg';
 
+const backgroundItem1 = {
+  backgroundImage: `url(${asset1})`,
+  top: '10%',
+  left: '25%',
+};
+
+const backgroundItem2 = {
+  backgroundImage: `url(${asset2})`,
+  top: '30%',
+  right: '10%',
+};
+
 class Philosophy extends React.Component {
-  static propTypes = {
-    news: PropTypes.arrayOf(PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-      content: PropTypes.string,
-    })).isRequired,
-  };
 
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1 className={s.wild}>Filosofía</h1>
-          <p className={s.philosophy}>
+          <div className={s.philosophy}>
+            <h1 className={s.wild}>Filosofía</h1>
+            <p>
             Vacía tu mente, piensa sin forma, moldeable, como el agua. Si pones
              agua en una taza, se convierte en la taza, si pones agua en una
              botella se convierte en la botella, si la pones en una tetera se
@@ -37,8 +42,10 @@ class Philosophy extends React.Component {
                 desarrollo tecnológico en la industria, es decir, poner en
                  practica de forma divertida lo que implica realizar un proyecto
                   real y lo que conlleva</p>
+          </div>
           <div className={s.assetContainer}>
-            <img src={asset1} className={s.asset} alt="assets" />
+            <div className={s.asset} style={backgroundItem1} />
+            <div className={s.asset} style={backgroundItem2} />
           </div>
         </div>
       </div>
