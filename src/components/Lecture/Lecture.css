@@ -9,6 +9,8 @@
 
 @import '../variables.css';
 
+
+
 .root {
   background: #f5f5f5;
   color: #333;
@@ -19,69 +21,44 @@
   font-size: 1.5em; /* ~24px */
   width: 100%;
 }
-
-.container h1 {
+.container h1{
   font-size: 2em;
-  font-weight: 300;
+}
+
+
+.lecture{
   text-align: center;
-}
-
-.lectures_container {
-  padding: 5px;
-  overflow-x:scroll;
-  margin: 0 !important;
-  
-}
-.scroll{
-  overflow-x: scroll;
-  width: 3000px;
-  padding: 20px;
-}
-
-.lectures_container h3 {
-  padding: 0.8em;
-}
-
-  
-.lecture {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   border-radius: 10px;
   background: white;
   display: inline-block;
-  width: 500px;
+  width: 300px;
   overflow: hidden;
   margin-right: 20px;
-  text-align: center;
 }
-
-.lecture img {
+.lecture img{
   border-radius: 50%;
   width: 100px;
   height: 100px;
   background: red;
   margin-bottom: 60px;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.lecture .enroll_button {
+.lecture .enroll_button{
   background: red;
   width: 100%;
   padding: 10px 0;
 }
-
-.lecture a {
+.lecture a{
   background: red;
   padding: 5px;
   color: white;
   text-decoration: none;
   display: inline-block;
 }
-
-.lecture .view_more {
+.lecture .view_more{
   margin-bottom: 20px;
   border-radius: 5px;
 }
-
 .link,
 .link:active,
 .link:hover,
