@@ -13,18 +13,17 @@
   padding-left: 20px;
   padding-right: 20px;
   background: white;
-  width: 46%;
   display: inline-block;
-  margin-bottom: 40px;
+  width: 70%;
 }
 
-.mentor_container {
+.student_container {
   position: relative;
   display: inline-flex;
 }
 
 .asset_container {
-  width: 50%;
+  width: 30%;
 }
 
 .asset {
@@ -39,8 +38,9 @@
 }
 
 .about {
-  width: 50%;
+  width: 70%;
   font-weight: 300;
+  text-align: left;
 }
 
 .about h4 {
@@ -54,6 +54,6 @@
   color: #222;
 }
 
-.mentor_about {
+.student_about {
   font-size: 15px;
 }

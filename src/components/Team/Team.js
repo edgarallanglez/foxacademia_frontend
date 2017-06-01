@@ -64,10 +64,10 @@ class Team extends React.Component {
               className={s.mentor_block}
             />
             <Mentor
-              name={mentor_two.name}
+              name={mentor_one.name}
               pro_field={mentor_one.pro_field}
               about={mentor_one.about}
-              background={mentor_two.background}
+              background={mentor_one.background}
               className={s.mentor_block}
             />
           </div>

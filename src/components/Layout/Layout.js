@@ -16,6 +16,7 @@ import Header from '../Header';
 import Philosophy from '../Philosophy';
 import Lectures from '../Lectures';
 import Team from '../Team';
+import Become from '../Become';
 import Footer from '../Footer';
 
 class Layout extends React.Component {
@@ -31,6 +32,7 @@ class Layout extends React.Component {
           <Philosophy />
           <Lectures />
           <Team />
+          <Become />
           <Footer />
         </div>
       </MuiThemeProvider>

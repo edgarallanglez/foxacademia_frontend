@@ -25,7 +25,7 @@ export default {
     if (!data || !data.news) throw new Error('Failed to load the news feed.');
     return {
       title: 'FOX Academia',
-      component: <Layout><Home news={data.news} /></Layout>,
+      component: <Layout />,
     };
   },
 
